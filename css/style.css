@@ -1,0 +1,72 @@
+
+#giris-div{
+	color: #fff;
+	padding: 50px;
+	margin: 70px;
+	margin-bottom: 40px;
+	background: rgba(0,0,0,.45);
+}
+
+.baslik1{
+	color:white;
+}
+#href-div{
+	padding:10px
+}
+.buton-class{
+color:#fff;
+background-color:#e52f3c;
+border: 3px #e52f3c;
+border-radius:0.3em;
+padding:5px;
+margin : 10px;
+
+}
+.buton-class:hover{
+background-color: #ccc;
+}
+
+.kutu{
+	color:#3a3838;
+	background:#efefef;
+}
+#footer {
+	padding: 10px;
+	background: #1f386e;
+	color: rgba(255,255,255,.65);
+	margin-top:20px;
+}
+form,html,body{
+	background-image: url('intro-bg.jpg');
+	background-repeat:no-repeat;
+    background-size: cover;
+
+}
+#href-div a{
+	color: #fff;
+	font-size: 17px;
+	line-height: 28px;
+	padding: 15px;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background: rgba(0,0,0,.45);
+}
+#baslik-div h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 62px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-shadow: 0 0 15px rgba(0,0,0,0.5)
+}
+.icerik {
+	color: #fff;
+	padding: 15px;
+	margin: 10px;
+	background: rgba(0,0,0,.45); 	
+}
+.icerik input{
+	margin:5px;
+}
