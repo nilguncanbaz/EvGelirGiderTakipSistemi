@@ -88,34 +88,7 @@
 			$eposta =$_POST["eposta"];
 			$sifre =$_POST["sifre"];
 			
-				/*$query= $database_connection->query("SELECT * FROM uyeler", PDO::FETCH_ASSOC);
-				{
-					foreach ($query as $row) {
-						if($nick==$row['nick']){
-							echo "Başka bir nick giriniz..";
-							header("location:kaydol.php");
-						}
-						if($eposta==$row['eposta']){
-							echo "Başka bir e-posta giriniz..";
-							header("location:kaydol.php");
-						}
-						
-					}
-				}
-				$query2=$database_connection->query("SELECT * FROM aileler", PDO::FETCH_ASSOC);
-				if($query2->rowCount()){
-					foreach ($query2 as $row){
-						if($soyad==$row['baslik']){
-							$aileID=row['id'];
-							break;
-						}
-						else{
-							$database_connection->query("INSERT INTO aileler(id,baslik) VALUES(NULL,'$soyad')", PDO::FETCH_ASSOC);
-							//$aileID=row['id'];
-						}
-					}
-				}
-				*/
+				
 				$query3=$database_connection->query("INSERT INTO uyeler VALUES (NULL, '1', '$nick', '$eposta', '$sifre', '0')", PDO::FETCH_ASSOC);
 				if($query3->rowCount()){
 					echo "Kayıt başarılı..";
