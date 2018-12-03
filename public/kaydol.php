@@ -109,7 +109,7 @@
 				}
 			
 				*/
-				$query3=$database_connection->query("INSERT INTO uyeler VALUES (NULL, '1', '$nick', '$eposta', '$sifre', '0')", PDO::FETCH_ASSOC);
+				$query3=$database_connection->query("INSERT INTO uyeler VALUES (NULL, '$ad', '$nick', '$eposta', '$sifre', '0')", PDO::FETCH_ASSOC);
 				if($query3->rowCount()){
 					echo "Kayıt başarılı..";
 						
