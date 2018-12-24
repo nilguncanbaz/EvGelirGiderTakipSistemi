@@ -13,21 +13,6 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Veritabanı: `ev-gelir-gider`
---
-
--- --------------------------------------------------------
-
---
--- Tablo için tablo yapısı `gelirler`
---
-
 DROP TABLE IF EXISTS `gelirler`;
 CREATE TABLE IF NOT EXISTS `gelirler` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -58,11 +43,7 @@ CREATE TABLE IF NOT EXISTS `giderler` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
 
---
--- Tablo için tablo yapısı `turler`
---
 
 DROP TABLE IF EXISTS `turler`;
 CREATE TABLE IF NOT EXISTS `turler` (
@@ -71,20 +52,7 @@ CREATE TABLE IF NOT EXISTS `turler` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
---
--- Tablo döküm verisi `turler`
---
 
-INSERT INTO `turler` (`id`, `baslik`) VALUES
-(1, 'fatura'),
-(2, 'Okul Giderleri'),
-(3, 'gıda');
-
--- --------------------------------------------------------
-
---
--- Tablo için tablo yapısı `uyeler`
---
 
 DROP TABLE IF EXISTS `uyeler`;
 CREATE TABLE IF NOT EXISTS `uyeler` (
@@ -97,15 +65,4 @@ CREATE TABLE IF NOT EXISTS `uyeler` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
 
---
--- Tablo döküm verisi `uyeler`
---
 
-INSERT INTO `uyeler` (`id`, `Ad`, `nick`, `eposta`, `sifre`, `yetki`) VALUES
-(1, 'Admin', 'admin', 'admin@asad.com', 'admin', b'1'),
-(2, 'nilgun', 'nlgn', 'Nilgun@asad.com', '123456', b'0');
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
