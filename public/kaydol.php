@@ -15,10 +15,6 @@
 <body >
 
 	<h3 class="icerik" >Ev-Hane Gelir Gider Takip Sistemi - Kayıt</h3> 
-
-	<form method= "POST" action="" name="frm2">
-		
-	
                  
                         <div class="icerik" >
                             
@@ -72,11 +68,6 @@
 								 
                             </div>
 
-               
-
-      
-		
-	</form>
 		
 	<div id="href-div" >
 		  <a href="../index.php">GİRİŞ'e dön.</a>
@@ -100,7 +91,7 @@
 							echo "Başka bir nick giriniz..";
 							header("location:kaydol.php");
 						}
-						if($eposta==$row['eposta']){
+						else if($eposta==$row['eposta']){
 							echo "Başka bir e-posta giriniz..";
 							header("location:kaydol.php");
 						}
