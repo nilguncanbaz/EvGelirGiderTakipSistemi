@@ -6,7 +6,7 @@
 				$nick =$_POST["nick"];
 				$sifre =$_POST["sifre"];
 				
-				// print $kAdi.' '.$sifre;
+				
 				$query= $database_connection->query("SELECT * FROM uyeler", PDO::FETCH_ASSOC);
 				if($query->rowCount()){
 					foreach ($query as $row) {
