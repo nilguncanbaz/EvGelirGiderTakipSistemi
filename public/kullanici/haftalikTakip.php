@@ -150,7 +150,7 @@
 											if($query->rowCount()){
 												
 												foreach ($query as $row) {
-													if($_SESSION["ID"]==$row['u_id']){
+													if($row["u_id"]==$_SESSION["ID"]){
 													for($i=0;$i<=7;$i++){
 														
 													$tarih1=date("Y-m-d", strtotime("-$i day"));																
@@ -164,7 +164,7 @@
 															echo "</tr>";
 														}														  
 													}	
-													}																		
+													}
 												}
 											}
 
@@ -200,22 +200,22 @@
 											if($query->rowCount()){
 												
 												foreach ($query as $row) {
-													if($_SESSION["ID"]==$row['u_id']){
-														for($i=0;$i<=7;$i++){
-															
-														$tarih1=date("Y-m-d", strtotime("-$i day"));																
-															if($tarih1==$row["tarih"]){
-																					
-																echo "<tr>" ;
-																echo"<td>".$row['baslik']."</td>";
-																echo"<td>".$row['aciklama']."</td>";
-																echo"<td>".$row['fiyat']."</td>";
-																echo"<td>".$row['tarih']."</td>";
-																echo "</tr>";
-															}														  
-														}
-
-													}
+													if($row["u_id"]==$_SESSION["ID"]){
+													for($i=0;$i<=7;$i++){
+														
+													$tarih1=date("Y-m-d", strtotime("-$i day"));																
+														if($tarih1==$row["tarih"]){
+																				
+															echo "<tr>" ;
+															echo"<td>".$row['baslik']."</td>";
+															echo"<td>".$row['aciklama']."</td>";
+															echo"<td>".$row['fiyat']."</td>";
+															echo"<td>".$row['tarih']."</td>";
+															echo "</tr>";
+														}														  
+													}																			
+												}
+												}
 											}
 
 										
